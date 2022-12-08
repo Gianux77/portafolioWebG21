@@ -1,0 +1,488 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 16px;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+:root{
+    --violet: #8e7bef;
+    --purple: #5d3bef;
+    --dark_grey: #222222;
+    --light_grewy: #423f40;
+    --light_pink: #f9f6ff;
+    --cream: #f9f5f2;
+}
+
+/* contenido principal */
+.contenido__principal{
+    width: 90%;
+    max-width: 70em;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 1.3em;
+    grid-template-rows: repeat(4, auto);
+}
+
+/* CONTENIDO DE NAVEGACION */
+
+.nav{
+    display: block;
+}
+.nav{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.nav__contenedor{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex; 
+}
+.nav__contenedor ul {
+    text-align: center;
+}
+.nav__contenedor ul li {
+    display: flex;
+    float: left;
+    margin: 20px;
+}
+.nav__contenedor ul li a{
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+/* ENCABEZADO HEADER*/
+
+/* imagenes */
+.container__header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.container__header__imagen{
+    width: 50% ;
+}
+.container__header__imagenes{
+    position: relative;
+}
+.imagen__1{
+    height: 30em;
+    position: absolute;
+    z-index: 1;
+}
+.imagen__2{
+    margin-top: 5em;
+    margin-left: 3em;
+    width: 25em;
+    position: relative;
+    z-index: 5;
+}
+
+/* letras*/
+.container__header__letter{
+    margin-left: 4em;
+    margin-top: 4em;
+}
+.container__header__letter-titulo{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+.container__header__letter-titulo > h1{
+    font-size: 4em;
+    color: #222222;
+}
+.container__header__letter-titulo > p{
+    font-size: 1em;
+    color: #222222;
+    margin: 2em 2em;
+}
+
+/* iconos */
+.container__header__icons{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+.container__header__icons > div {
+    background-color: #8e7bef;
+    width: 4em;
+    height: 4em;
+    margin: 1em ;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container__header__icons > div >a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.container__header__icons > div >a >i{
+    font-size: 2em;
+    color: white;
+}
+
+.container__header__button > button{
+      margin-top: 2em;
+      width: 70%;
+      background-color: #8e7bef;
+      border: none;
+      
+}
+.container__header__button > button > a {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0 ;
+    
+}
+.container__header__button > button > a > i{
+    margin-right: 1.5em;
+    font-size: 1.5em;
+    color: white;
+}
+.container__header__button > button > a > p{
+    color: white;
+    font-size: 1.5em;
+}
+ 
+
+/* CONTENIDO MAIN */
+
+.main{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1em;
+    grid-template-rows: repeat(4, auto);
+}
+
+/* Acerca de Mi */
+.seccion_1{
+ margin-top: 1em;
+}
+
+.seccion_1 > h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+.seccion_1 > p{
+    text-align: center;
+}
+
+/* Mis Habilidades */
+
+.seccion_2{
+    margin-top: 1em;
+}
+.seccion_2 > h2{
+    text-align: center;
+}
+.seccion_2__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20em;
+    margin: 2em;
+}
+.seccion_2__div > div{
+    background-color:var(--light_pink);
+    height: 15em;
+    margin: 2em ;
+}
+.seccion_2__div > div > h3{
+    text-align: center;
+    margin-bottom: 1em;
+}
+.seccion_2__div > div > p{
+    text-align: center;
+}
+.seccion__2__div_item{
+    display: block;
+}
+
+/* EXPERIENCIA */
+
+.seccion__3{
+    width: 100%;
+    height: 25em;
+}
+.seccion__3 > h2{
+    text-align: center;
+}
+.container__seccion_3{
+    margin-top: 2em;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 20em;
+    margin: 1em;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1em;
+}
+
+.container__seccion_3 > div{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+}
+.container__seccion_3 > div > i{
+    font-size: 4em;
+    color: #8e7bef;
+}
+.container__seccion_3 > div > h3{
+    margin-left: 1em;
+}
+.container__seccion_3 > div > h4{
+    margin-left: 2em;
+    position: relative;
+    left: 5em;
+    top: 1em;
+}
+.container__seccion_3 > div > p{
+    font-size: 0.7em;
+    text-align: center;
+    position: relative;
+    top: 3em;
+    right: 14em;
+}
+ 
+
+/* PORTAFOLIO */ 
+
+.seccion__4{
+    margin-top: 1em;
+    height: 35em;
+}
+.seccion__4 > h2{
+    text-align: center;
+}
+
+.seccion__4__imagenes{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 30em;
+    margin: 1em;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1em;
+}
+.seccion__4__imagenes > div > img{
+    width: 18em;
+
+}
+
+/* Contactos */
+
+.seccion__5{
+    margin-top: 2em;
+    height: 15em;
+}
+.seccion__5 > h2{
+    text-align: center;
+}
+.seccion__5__iconos{
+    display: flex;
+    height: 15em;
+    justify-content: center;
+    align-items: center;
+}
+.seccion__5__iconos > div {
+    background-color: #f9f6ff;
+    width: 8em;
+    height: 8em;
+    margin: 4em ;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+}
+
+.seccion__5__iconos > div > i{
+    display: flex;
+    font-size: 4em;
+    color: var(--violet);
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.6em;
+}
+.seccion__5__iconos > div > p{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+}
+
+/* footer */
+
+.footer{
+    height: 3em;
+    margin-top: 10em;
+
+}
+.footer > p {
+    text-align: center;
+    color: #5d3bef;
+}
+
+/* SECCION MOBILE */
+
+@media screen and (max-width: 990px){
+    body{
+        box-sizing: border-box;
+        max-width: 50em;
+    }
+
+    .contenido__principal{
+        width: 100%;
+        max-width: 50em;
+   }
+
+   /* NAVEGACION */
+   .nav{
+     display: none;
+   }
+   
+    /* ENCABEZADO */
+    .container__header{
+         width: 100%;
+         display: grid;
+         justify-content: center;
+         align-items: center;
+    }
+
+    /* TITULO */
+    .container__header__letter{
+       margin-left: 2em;
+       margin-top: 2em;
+      
+    }
+    .container__header__letter-titulo > h1{
+        font-size: 6em;
+        text-align: center;
+        display: grid;
+    }
+    .container__header__letter-titulo > p{
+        font-size: 1em;
+        color: #222222;
+        margin: 2em 2em;
+    }
+
+    /* ICONOS */
+    .container__header__icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    }
+    .container__header__button > button{
+       margin-left: 5em;
+    }
+
+  /* main */
+    .main{
+       width: 100%;
+       display: grid;
+       justify-content: center;
+       align-items: center;
+    }
+    /* Acerca de MI */
+
+    .seccion_1 {
+        margin-top: 5em;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+   }
+    .seccion_1 > h2{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+   }
+   
+   /* Mis Habilidades */
+ 
+   .seccion_2{
+        margin-top: 5em;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .seccion__2__div_item{
+        display: none;
+    }
+    .seccion_2__div > div{
+        width: 10em;
+    }
+    
+    /* Experiencia */
+    .seccion__3{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 35em;
+    }
+    .container__seccion_3{
+       display: grid;
+       grid-template-columns: auto;
+       grid-template-rows: repeat(3, 1fr);
+       height: 25em;
+       width: 100%;
+    }
+
+    /* Portafolio */
+    .seccion__4{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .seccion__4__imagenes{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, ifr);
+    }
+
+    /* Contacto */
+    .seccion__5{
+        margin-top: 30em;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .seccion__5__iconos{
+        height: 50em;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, 1fr);
+
+    }
+     
+    /* footer*/
+    .footer{ 
+        margin-top: 43em;
+     } 
+
+}
+
+
+
